@@ -41,7 +41,7 @@ choose  Enter your selection: [simple_form]
 option  Add pages?
 choose  Enter your selection: [about+users]
 option  Set a locale?
-choose  Enter your selection: [zh]
+choose  Enter your selection: [zh-CN]
 option  Install page-view analytics?
 choose  Enter your selection: [none]
 option  Add a deployment mechanism?

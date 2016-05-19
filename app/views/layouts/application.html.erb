@@ -15,6 +15,7 @@
     <header>
       <%= render 'layouts/navigation' unless current_page?(root_path) %>
     </header>
+      <%= render 'layouts/nav_links_for_auth' %>
       <%= render 'layouts/messages' %>
       <%= yield %>
   </body>

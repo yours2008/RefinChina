@@ -1,0 +1,31 @@
+.page-header
+  h1 债务人列表
+table.table.table-striped
+  thead
+    tr
+      th 姓名
+      th 性别
+      th 身份证号
+      th 电话
+      th Legalphone
+      th Legalmail
+      th
+      th
+      th
+
+  tbody
+    - @obligors.each do |obligor|
+      tr
+        td = obligor.legalname
+        td = obligor.legalsex
+        td = obligor.legalidno
+        td = obligor.legaltel
+        td = obligor.legalphone
+        td = obligor.legalmail
+        td = link_to 'Show', obligor
+        td = link_to 'Edit', edit_obligor_path(obligor)
+        td = link_to 'Destroy', obligor, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to '新建债务人', new_obligor_path

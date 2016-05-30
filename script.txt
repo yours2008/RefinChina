@@ -1,0 +1,32 @@
+rails g scaffold Obligor legalname legalsex:boolean legalidno  legalidduedate  legalLongTerm:boolean  legaltel  legalphone_area  legalphone_num  legalphone  legalmail 
+
+
+---地址相关信息  确认使用的格式再说
+originArea originProvince originCity permanentArea permanentProvince permanentCity
+permanentDistrict permanentAddr 
+
+ alipayAccount  spouseName  spouseNumber  spousePhone  spouseArea  localChildren  localChildren  houseNumber  houseArea  hasCar  hasCar  socialSecurity  creditLimit  liabilities 
+shareProportion       
+
+
+creditor  债权人
+obligor   债务人
+Capital   资金
+Debt      债务
+
+rails g scaffold Creditor legalname legalsex:boolean legalidno legalidduedate  legalLongTerm:boolean  legaltel legalphone  legalmail custname endlishName businessNumber idno idduedate isIdLongTerm nature zipcode:integer custPhone fax corptype area addr registeredAddr
+
+rails g scaffold Capital startDate:date endDate:date term scale:decimal collateral enterpriseProfit
+
+rails g scaffold Debt name amount:decimal startDate:date endDate:date cost:decimal new_cost:decimal early_repayment:boolean collateral collarteral_address collateral_value contract creditor creditor_phone creditor_email 
+
+
+dealsp
+num
+regamt
+turnover
+profit
+annualsales
+operationperiod
+kisYears
+

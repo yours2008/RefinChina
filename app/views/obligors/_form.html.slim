@@ -1,0 +1,15 @@
+= simple_form_for(@obligor) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :legalname
+    = f.input :legalsex
+    = f.input :legalidno
+    = f.input :legalidduedate
+    = f.input :legalLongTerm
+    = f.input :legaltel
+    = f.input :legalphone
+    = f.input :legalmail
+
+  .form-actions
+    = f.button :submit

@@ -1,0 +1,29 @@
+= simple_form_for(@creditor) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :legalname
+    = f.input :legalsex
+    = f.input :legalidno
+    = f.input :legalidduedate
+    = f.input :legalLongTerm
+    = f.input :legaltel
+    = f.input :legalphone
+    = f.input :legalmail
+    = f.input :custname
+    = f.input :endlishName
+    = f.input :businessNumber
+    = f.input :idno
+    = f.input :idduedate
+    = f.input :isIdLongTerm
+    = f.input :nature
+    = f.input :zipcode
+    = f.input :custPhone
+    = f.input :fax
+    = f.input :corptype
+    = f.input :area
+    = f.input :addr
+    = f.input :registeredAddr
+
+  .form-actions
+    = f.button :submit

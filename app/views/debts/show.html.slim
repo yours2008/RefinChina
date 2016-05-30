@@ -1,0 +1,48 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @debt.name
+p
+  strong Amount:
+  = @debt.amount
+p
+  strong Startdate:
+  = @debt.startDate
+p
+  strong Enddate:
+  = @debt.endDate
+p
+  strong Cost:
+  = @debt.cost
+p
+  strong New cost:
+  = @debt.new_cost
+p
+  strong Early repayment:
+  = @debt.early_repayment
+p
+  strong Collateral:
+  = @debt.collateral
+p
+  strong Collarteral address:
+  = @debt.collarteral_address
+p
+  strong Collateral value:
+  = @debt.collateral_value
+p
+  strong Contract:
+  = @debt.contract
+p
+  strong Creditor:
+  = @debt.creditor
+p
+  strong Creditor phone:
+  = @debt.creditor_phone
+p
+  strong Creditor email:
+  = @debt.creditor_email
+
+= link_to 'Edit', edit_debt_path(@debt)
+'|
+= link_to 'Back', debts_path

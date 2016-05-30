@@ -1,0 +1,31 @@
+h1 Listing capitals
+
+table
+  thead
+    tr
+      th Startdate
+      th Enddate
+      th Term
+      th Scale
+      th Collateral
+      th Enterpriseprofit
+      th
+      th
+      th
+
+  tbody
+    - @capitals.each do |capital|
+      tr
+        td = capital.startDate
+        td = capital.endDate
+        td = capital.term
+        td = capital.scale
+        td = capital.collateral
+        td = capital.enterpriseProfit
+        td = link_to 'Show', capital
+        td = link_to 'Edit', edit_capital_path(capital)
+        td = link_to 'Destroy', capital, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Capital', new_capital_path

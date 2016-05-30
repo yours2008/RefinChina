@@ -1,0 +1,47 @@
+h1 Listing debts
+
+table
+  thead
+    tr
+      th Name
+      th Amount
+      th Startdate
+      th Enddate
+      th Cost
+      th New cost
+      th Early repayment
+      th Collateral
+      th Collarteral address
+      th Collateral value
+      th Contract
+      th Creditor
+      th Creditor phone
+      th Creditor email
+      th
+      th
+      th
+
+  tbody
+    - @debts.each do |debt|
+      tr
+        td = debt.name
+        td = debt.amount
+        td = debt.startDate
+        td = debt.endDate
+        td = debt.cost
+        td = debt.new_cost
+        td = debt.early_repayment
+        td = debt.collateral
+        td = debt.collarteral_address
+        td = debt.collateral_value
+        td = debt.contract
+        td = debt.creditor
+        td = debt.creditor_phone
+        td = debt.creditor_email
+        td = link_to 'Show', debt
+        td = link_to 'Edit', edit_debt_path(debt)
+        td = link_to 'Destroy', debt, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Debt', new_debt_path

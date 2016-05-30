@@ -1,0 +1,36 @@
+p#notice = notice
+
+p
+  strong Legalname:
+  = @obligor.legalname
+p
+  strong Legalsex:
+  = @obligor.legalsex
+p
+  strong Legalidno:
+  = @obligor.legalidno
+p
+  strong Legalidduedate:
+  = @obligor.legalidduedate
+p
+  strong Legallongterm:
+  = @obligor.legalLongTerm
+p
+  strong Legaltel:
+  = @obligor.legaltel
+p
+  strong Legalphone area:
+  = @obligor.legalphone_area
+p
+  strong Legalphone num:
+  = @obligor.legalphone_num
+p
+  strong Legalphone:
+  = @obligor.legalphone
+p
+  strong Legalmail:
+  = @obligor.legalmail
+
+= link_to 'Edit', edit_obligor_path(@obligor)
+'|
+= link_to 'Back', obligors_path

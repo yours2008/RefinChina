@@ -1,0 +1,24 @@
+p#notice = notice
+
+p
+  strong Startdate:
+  = @capital.startDate
+p
+  strong Enddate:
+  = @capital.endDate
+p
+  strong Term:
+  = @capital.term
+p
+  strong Scale:
+  = @capital.scale
+p
+  strong Collateral:
+  = @capital.collateral
+p
+  strong Enterpriseprofit:
+  = @capital.enterpriseProfit
+
+= link_to 'Edit', edit_capital_path(@capital)
+'|
+= link_to 'Back', capitals_path

@@ -11,7 +11,97 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160518121513) do
+ActiveRecord::Schema.define(version: 20160529024645) do
+
+  create_table "business_types", force: :cascade do |t|
+    t.string   "btype"
+    t.string   "bvalue"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "capitals", force: :cascade do |t|
+    t.date     "startDate"
+    t.date     "endDate"
+    t.string   "term"
+    t.decimal  "scale"
+    t.string   "collateral"
+    t.string   "enterpriseProfit"
+    t.string   "industry"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  create_table "creditors", force: :cascade do |t|
+    t.string   "operator_name"
+    t.boolean  "operator_sex"
+    t.string   "operator_idno"
+    t.string   "operator_idduedate"
+    t.boolean  "operator_longterm"
+    t.string   "operator_tel"
+    t.string   "operator_phone"
+    t.string   "operator_mail"
+    t.string   "custname"
+    t.string   "endlishName"
+    t.string   "nature"
+    t.integer  "zipcode"
+    t.string   "custPhone"
+    t.string   "fax"
+    t.string   "corptype"
+    t.string   "area"
+    t.string   "addr"
+    t.string   "registeredAddr"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
+
+  create_table "debts", force: :cascade do |t|
+    t.string   "name"
+    t.decimal  "amount"
+    t.date     "startDate"
+    t.date     "endDate"
+    t.decimal  "cost"
+    t.decimal  "new_cost"
+    t.boolean  "early_repayment"
+    t.string   "collateral"
+    t.string   "collarteral_address"
+    t.string   "collateral_value"
+    t.string   "contract"
+    t.string   "creditor"
+    t.string   "creditor_phone"
+    t.string   "creditor_email"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+  end
+
+  create_table "obligors", force: :cascade do |t|
+    t.string   "legalname"
+    t.boolean  "legalsex"
+    t.string   "legalidno"
+    t.string   "legalidduedate"
+    t.boolean  "legalLongTerm"
+    t.string   "legaltel"
+    t.string   "legalphone_area"
+    t.string   "legalphone_num"
+    t.string   "legalphone"
+    t.string   "legalmail"
+    t.string   "custname"
+    t.string   "endlishName"
+    t.string   "businessNumber"
+    t.string   "idno"
+    t.string   "idduedate"
+    t.string   "isIdLongTerm"
+    t.string   "nature"
+    t.integer  "zipcode"
+    t.string   "custPhone"
+    t.string   "fax"
+    t.string   "corptype"
+    t.string   "area"
+    t.string   "addr"
+    t.string   "registeredAddr"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

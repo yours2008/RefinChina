@@ -1,0 +1,21 @@
+= simple_form_for(@debt) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :amount
+    = f.input :startDate
+    = f.input :endDate
+    = f.input :cost
+    = f.input :new_cost
+    = f.input :early_repayment
+    = f.input :collateral
+    = f.input :collarteral_address
+    = f.input :collateral_value
+    = f.input :contract
+    = f.input :creditor
+    = f.input :creditor_phone
+    = f.input :creditor_email
+
+  .form-actions
+    = f.button :submit

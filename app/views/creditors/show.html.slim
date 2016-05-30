@@ -1,0 +1,72 @@
+p#notice = notice
+
+p
+  strong Legalname:
+  = @creditor.legalname
+p
+  strong Legalsex:
+  = @creditor.legalsex
+p
+  strong Legalidno:
+  = @creditor.legalidno
+p
+  strong Legalidduedate:
+  = @creditor.legalidduedate
+p
+  strong Legallongterm:
+  = @creditor.legalLongTerm
+p
+  strong Legaltel:
+  = @creditor.legaltel
+p
+  strong Legalphone:
+  = @creditor.legalphone
+p
+  strong Legalmail:
+  = @creditor.legalmail
+p
+  strong Custname:
+  = @creditor.custname
+p
+  strong Endlishname:
+  = @creditor.endlishName
+p
+  strong Businessnumber:
+  = @creditor.businessNumber
+p
+  strong Idno:
+  = @creditor.idno
+p
+  strong Idduedate:
+  = @creditor.idduedate
+p
+  strong Isidlongterm:
+  = @creditor.isIdLongTerm
+p
+  strong Nature:
+  = @creditor.nature
+p
+  strong Zipcode:
+  = @creditor.zipcode
+p
+  strong Custphone:
+  = @creditor.custPhone
+p
+  strong Fax:
+  = @creditor.fax
+p
+  strong Corptype:
+  = @creditor.corptype
+p
+  strong Area:
+  = @creditor.area
+p
+  strong Addr:
+  = @creditor.addr
+p
+  strong Registeredaddr:
+  = @creditor.registeredAddr
+
+= link_to 'Edit', edit_creditor_path(@creditor)
+'|
+= link_to 'Back', creditors_path

@@ -208,3 +208,65 @@ zh-CN:
       long: "%Y年%b%d日 %H:%M"
       short: "%b%d日 %H:%M"
     pm: 下午
+  activerecord:
+    models:
+      obligor: 债务人
+      creditor: 债权人
+      capital: 资金
+      debt: 债务
+    attributes:
+      obligor:
+        legalname: 姓名
+        legalsex: 性别
+        legalidno: 身份证号
+        legalidduedate: 证件有效期
+        legalLongTerm: 证件是否长期有效
+        legaltel: 电话
+        legalphone: 办公电话号码
+        legalmail: 邮箱地址
+        custname: 公司名称
+        endlishName: 公司英文名称
+        businessNumber: 营业执照注册号
+        idno: 组织机构代码
+        idduedate: 证件有效期
+        isIdLongTerm: 长期有效
+        nature: 企业性质
+        zipcode: 邮编
+        custPhone: 企业电话
+        fax: 企业传真
+        corptype: 所属行业
+        area: 所属区域
+        addr: 详细地址
+        registeredAddr: 公司注册地
+      capital: 
+        startDate: 开始时间
+        endDate: 结束时间
+        term: 周期
+        scale: 规模
+        collateral: 抵押物
+        enterpriseProfit: 企业效益
+        industry: 行业
+      creditor: 
+        operator_name: 姓名
+        operator_sex: 性别
+        operator_idno: 身份证号
+        operator_idduedate: 证件有效期
+        operator_longTerm: 证件是否长期有效
+        operator_tel: 电话
+        operator_phone_area: 办公电话
+        operator_phone_num: 办公电话区号
+        operator_phone: 办公电话号码
+        operator_mail: 邮箱地址
+        custname: 公司名称
+        endlishName: 公司英文名称
+        nature: 企业性质
+        zipcode: 邮编
+        custPhone: 企业电话
+        fax: 企业传真
+        corptype: 所属行业
+        area: 所属区域
+        addr: 详细地址
+        registeredAddr: 公司注册地
+
+
+

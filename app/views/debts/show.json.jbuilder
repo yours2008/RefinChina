@@ -1,0 +1,1 @@
+json.extract! @debt, :id, :name, :amount, :startDate, :endDate, :cost, :new_cost, :early_repayment, :collateral, :collarteral_address, :collateral_value, :contract, :creditor, :creditor_phone, :creditor_email, :created_at, :updated_at

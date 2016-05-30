@@ -1,0 +1,63 @@
+h1 Listing creditors
+
+table
+  thead
+    tr
+      th Legalname
+      th Legalsex
+      th Legalidno
+      th Legalidduedate
+      th Legallongterm
+      th Legaltel
+      th Legalphone
+      th Legalmail
+      th Custname
+      th Endlishname
+      th Businessnumber
+      th Idno
+      th Idduedate
+      th Isidlongterm
+      th Nature
+      th Zipcode
+      th Custphone
+      th Fax
+      th Corptype
+      th Area
+      th Addr
+      th Registeredaddr
+      th
+      th
+      th
+
+  tbody
+    - @creditors.each do |creditor|
+      tr
+        td = creditor.legalname
+        td = creditor.legalsex
+        td = creditor.legalidno
+        td = creditor.legalidduedate
+        td = creditor.legalLongTerm
+        td = creditor.legaltel
+        td = creditor.legalphone
+        td = creditor.legalmail
+        td = creditor.custname
+        td = creditor.endlishName
+        td = creditor.businessNumber
+        td = creditor.idno
+        td = creditor.idduedate
+        td = creditor.isIdLongTerm
+        td = creditor.nature
+        td = creditor.zipcode
+        td = creditor.custPhone
+        td = creditor.fax
+        td = creditor.corptype
+        td = creditor.area
+        td = creditor.addr
+        td = creditor.registeredAddr
+        td = link_to 'Show', creditor
+        td = link_to 'Edit', edit_creditor_path(creditor)
+        td = link_to 'Destroy', creditor, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Creditor', new_creditor_path

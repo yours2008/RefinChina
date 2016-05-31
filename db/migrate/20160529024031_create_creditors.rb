@@ -9,7 +9,7 @@ class CreateCreditors < ActiveRecord::Migration
       t.string :operator_tel
       t.string :operator_phone
       t.string :operator_mail
-      t.string :custname
+      t.string :cust_name
       t.string :english_name
       t.string :nature
       t.integer :zipcode

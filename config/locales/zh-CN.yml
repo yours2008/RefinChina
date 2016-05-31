@@ -257,16 +257,16 @@ zh-CN:
         operator_phone_num: 办公电话区号
         operator_phone: 办公电话号码
         operator_mail: 邮箱地址
-        custname: 公司名称
-        endlishName: 公司英文名称
+        cust_name: 公司名称
+        english_ame: 公司英文名称
         nature: 企业性质
         zipcode: 邮编
-        custPhone: 企业电话
+        cust_phone: 企业电话
         fax: 企业传真
-        corptype: 所属行业
+        corp_type: 所属行业
         area: 所属区域
         addr: 详细地址
-        registeredAddr: 公司注册地
+        registered_addr: 公司注册地
 
 
 

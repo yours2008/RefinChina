@@ -8,7 +8,7 @@ FactoryGirl.define do
     legaltel "MyString"
     legalphone "MyString"
     legalmail "MyString"
-    custname "MyString"
+    cust_name "MyString"
     endlishName "MyString"
     businessNumber "MyString"
     idno "MyString"

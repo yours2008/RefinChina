@@ -18,6 +18,11 @@
       <%= f.label :password_confirmation %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
     </div>
+
+    <%= f.fields_for :userable_attributes do |rf| %>
+      <%= rf.label :legalphone %>
+      <%= f.text_field :name, class: 'form-control' %>
+    <% end %>
      <%= f.submit 'Sign up', :class => 'button right' %>
   <% end %>
 </div>

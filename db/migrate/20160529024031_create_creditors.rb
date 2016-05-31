@@ -10,15 +10,15 @@ class CreateCreditors < ActiveRecord::Migration
       t.string :operator_phone
       t.string :operator_mail
       t.string :custname
-      t.string :endlishName
+      t.string :english_name
       t.string :nature
       t.integer :zipcode
-      t.string :custPhone
+      t.string :cust_phone
       t.string :fax
-      t.string :corptype
+      t.string :corp_type
       t.string :area
-      t.string :addr
-      t.string :registeredAddr
+      t.string :address
+      t.string :registered_addr
 
       t.timestamps null: false
     end

@@ -81,8 +81,6 @@ ActiveRecord::Schema.define(version: 20160531062328) do
     t.string   "legalidduedate"
     t.boolean  "legalLongTerm"
     t.string   "legaltel"
-    t.string   "legalphone_area"
-    t.string   "legalphone_num"
     t.string   "legalphone"
     t.string   "legalmail"
     t.string   "custname"
@@ -99,8 +97,8 @@ ActiveRecord::Schema.define(version: 20160531062328) do
     t.string   "area"
     t.string   "addr"
     t.string   "registeredAddr"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "users", force: :cascade do |t|

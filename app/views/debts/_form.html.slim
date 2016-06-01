@@ -3,19 +3,20 @@
 
   .form-inputs
     = f.input :name
-    = f.input :amount
-    = f.input :startDate
-    = f.input :endDate
+    = f.input :debt_type
+    = f.input :domestic_offshore
+    = f.input :start_date
+    = f.input :end_date
+    = f.input :face_value
+    = f.input :par_value
     = f.input :cost
-    = f.input :new_cost
-    = f.input :early_repayment
-    = f.input :collateral
-    = f.input :collarteral_address
-    = f.input :collateral_value
-    = f.input :contract
-    = f.input :creditor
-    = f.input :creditor_phone
-    = f.input :creditor_email
+    = f.input :interest_period
+    = f.input :interest_start_date
+    = f.input :interest_end_date
+    = f.input :actual_annual_rate
+    = f.input :repay_methord
+    = f.input :annual_pd
+    = f.input :prepayable
 
   .form-actions
     = f.button :submit

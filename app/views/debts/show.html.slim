@@ -4,44 +4,47 @@ p
   strong Name:
   = @debt.name
 p
-  strong Amount:
-  = @debt.amount
+  strong Type:
+  = @debt.debt_type
+p
+  strong domestic_offshore:
+  = @debt.domestic_offshore
 p
   strong Startdate:
-  = @debt.startDate
+  = @debt.start_date
 p
   strong Enddate:
-  = @debt.endDate
+  = @debt.end_date
 p
-  strong Cost:
+  strong face_value:
+  = @debt.face_value
+p
+  strong par_value:
+  = @debt.par_value
+p
+  strong cost:
   = @debt.cost
 p
-  strong New cost:
-  = @debt.new_cost
+  strong interest_period:
+  = @debt.interest_period
 p
-  strong Early repayment:
-  = @debt.early_repayment
+  strong interest_start_date:
+  = @debt.interest_start_date
 p
-  strong Collateral:
-  = @debt.collateral
+  strong interest_end_date:
+  = @debt.interest_end_date
 p
-  strong Collarteral address:
-  = @debt.collarteral_address
+  strong actual_annual_rate:
+  = @debt.actual_annual_rate
 p
-  strong Collateral value:
-  = @debt.collateral_value
+  strong repay_methord:
+  = @debt.repay_methord
 p
-  strong Contract:
-  = @debt.contract
+  strong annual_pd:
+  = @debt.annual_pd
 p
-  strong Creditor:
-  = @debt.creditor
-p
-  strong Creditor phone:
-  = @debt.creditor_phone
-p
-  strong Creditor email:
-  = @debt.creditor_email
+  strong prepayable:
+  = @debt.prepayable
 
 = link_to 'Edit', edit_debt_path(@debt)
 '|

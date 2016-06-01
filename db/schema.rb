@@ -57,48 +57,34 @@ ActiveRecord::Schema.define(version: 20160531062328) do
 
   create_table "debts", force: :cascade do |t|
     t.string   "name"
-    t.decimal  "amount"
-    t.date     "startDate"
-    t.date     "endDate"
+    t.string   "type"
+    t.string   "domestic_offshore"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.decimal  "face_value"
+    t.decimal  "par_value"
     t.decimal  "cost"
-    t.decimal  "new_cost"
-    t.boolean  "early_repayment"
-    t.string   "collateral"
-    t.string   "collarteral_address"
-    t.string   "collateral_value"
-    t.string   "contract"
-    t.string   "creditor"
-    t.string   "creditor_phone"
-    t.string   "creditor_email"
+    t.string   "interest_period"
+    t.date     "interest_start_date"
+    t.date     "interest_end_date"
+    t.decimal  "actual_annual_rate"
+    t.string   "repay_methord"
+    t.decimal  "annual_pd"
+    t.string   "prepayable"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
   end
 
   create_table "obligors", force: :cascade do |t|
-    t.string   "legalname"
-    t.boolean  "legalsex"
-    t.string   "legalidno"
-    t.string   "legalidduedate"
-    t.boolean  "legalLongTerm"
-    t.string   "legaltel"
-    t.string   "legalphone"
-    t.string   "legalmail"
-    t.string   "custname"
-    t.string   "endlishName"
-    t.string   "businessNumber"
-    t.string   "idno"
-    t.string   "idduedate"
-    t.string   "isIdLongTerm"
-    t.string   "nature"
-    t.integer  "zipcode"
-    t.string   "custPhone"
-    t.string   "fax"
-    t.string   "corptype"
-    t.string   "area"
-    t.string   "addr"
-    t.string   "registeredAddr"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.string   "company_name"
+    t.string   "license_code"
+    t.string   "deposit_bank"
+    t.string   "bank_no"
+    t.string   "province_id"
+    t.string   "city_id"
+    t.string   "address"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "users", force: :cascade do |t|

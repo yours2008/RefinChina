@@ -2,19 +2,21 @@ class CreateDebts < ActiveRecord::Migration
   def change
     create_table :debts do |t|
       t.string :name
-      t.decimal :amount
-      t.date :startDate
-      t.date :endDate
+      t.string :debt_type
+      t.string :domestic_offshore
+      t.date :start_date
+      t.date :end_date
+      t.decimal :face_value
+      t.decimal :par_value
       t.decimal :cost
-      t.decimal :new_cost
-      t.boolean :early_repayment
-      t.string :collateral
-      t.string :collarteral_address
-      t.string :collateral_value
-      t.string :contract
-      t.string :creditor
-      t.string :creditor_phone
-      t.string :creditor_email
+      t.string :interest_period
+      t.date :interest_start_date
+      t.date :interest_end_date
+      t.decimal :actual_annual_rate
+      t.string :repay_methord
+      t.decimal :annual_pd
+      t.string :prepayable
+
 
       t.timestamps null: false
     end

@@ -69,6 +69,6 @@ class ObligorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def obligor_params
-      params.require(:obligor).permit(:legalname, :legalsex, :legalidno, :legalidduedate, :legalLongTerm, :legaltel, :legalphone_area, :legalphone_num, :legalphone, :legalmail)
+      params.require(:obligor).permit(:company_name, :license_code, :deposit_bank, :bank_no, :province_id, :city_id, :address)
     end
 end

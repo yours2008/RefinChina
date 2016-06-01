@@ -216,28 +216,13 @@ zh-CN:
       debt: 债务
     attributes:
       obligor:
-        legalname: 姓名
-        legalsex: 性别
-        legalidno: 身份证号
-        legalidduedate: 证件有效期
-        legalLongTerm: 证件是否长期有效
-        legaltel: 电话
-        legalphone: 办公电话号码
-        legalmail: 邮箱地址
-        custname: 公司名称
-        endlishName: 公司英文名称
-        businessNumber: 营业执照注册号
-        idno: 组织机构代码
-        idduedate: 证件有效期
-        isIdLongTerm: 长期有效
-        nature: 企业性质
-        zipcode: 邮编
-        custPhone: 企业电话
-        fax: 企业传真
-        corptype: 所属行业
-        area: 所属区域
-        addr: 详细地址
-        registeredAddr: 公司注册地
+        company_name: 公司名称
+        license_code: 营业执照注册号
+        deposit_bank: 开户行
+        bank_no: 开户账号
+        province_id: 所在省份
+        city_id: 所在市
+        address: 地址
       capital: 
         startDate: 开始时间
         endDate: 结束时间
@@ -267,6 +252,22 @@ zh-CN:
         area: 所属区域
         addr: 详细地址
         registered_addr: 公司注册地
+      debt:
+        name: 债务名称
+        type: 债务类型
+        domestic_offshore: 境内境外
+        start_date: 债务开始时间
+        end_date: 债务结束时间
+        face_value: 债务本金
+        par_value: 单份份额
+        cost: 债务成本
+        interest_period: 计息周期
+        interest_start_date: 计息开始时间
+        interest_end_date: 计息结束时间
+        actual_annual_rate: 实际年利率
+        repay_methord: 还款方式
+        annual_pd: 年度还本付息金额
+        prepayable: 是否能提前还款
 
 
 

@@ -1,1 +1,1 @@
-json.extract! @obligor, :id, :legalname, :legalsex, :legalidno, :legalidduedate, :legalLongTerm, :legaltel, :legalphone_area, :legalphone_num, :legalphone, :legalmail, :created_at, :updated_at
+json.extract! @obligor, :id, :company_name, :license_code, :deposit_bank, :bank_no, :province_id, :city_id, :address, :created_at, :updated_at

@@ -1,5 +1,13 @@
 .page-header
   h1 债务列表
+
+
+  = search_form_for @search, html: {class: "navbar-form navbar-right"} do |f|
+    .form-group
+      =f.label :债务名称
+      =f.search_field :name_cont , class: "form-control"
+      =f.submit "搜索", class: "btn btn-warning"
+
 table.table.table-striped
   thead
     tr
@@ -43,7 +51,7 @@ table.table.table-striped
         td = link_to 'Show', debt
         td = link_to 'Edit', edit_debt_path(debt)
         td = link_to 'Destroy', debt, data: {:confirm => 'Are you sure?'}, :method => :delete
-
+= will_paginate @debts, renderer: BootstrapPagination::Rails
 br
 
 = link_to 'New Debt', new_debt_path

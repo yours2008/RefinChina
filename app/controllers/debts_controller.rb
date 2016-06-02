@@ -4,7 +4,11 @@ class DebtsController < ApplicationController
   # GET /debts
   # GET /debts.json
   def index
-    @debts = Debt.all
+    # @debts = Debt.all
+    @search = Debt.ransack(params[:q])
+    # @search.sorts = 'name asc' if @search.sorts.empty?
+    @debts = @search.result.paginate(:page => params[:page],:per_page => 8)
+
   end
 
   # GET /debts/1

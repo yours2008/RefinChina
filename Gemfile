@@ -14,6 +14,8 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
+gem 'ransack'
+gem 'will_paginate-bootstrap'
 gem 'administrate'
 gem 'bootstrap-sass'
 gem 'devise'

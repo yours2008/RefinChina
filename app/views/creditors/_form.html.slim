@@ -3,7 +3,7 @@
 
   .form-inputs
     = f.input :operator_name
-    = f.input :operator_sex
+    = f.collection_radio_buttons :operator_sex, [[true, 'male'] ,[false, 'female']], :first, :last
     = f.input :operator_idno
     = f.input :operator_idduedate
     = f.input :operator_longterm

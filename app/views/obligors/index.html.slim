@@ -10,12 +10,14 @@ table.table.table-striped
       th 所在省份
       th 所在市
       th 地址
+      th
+      th
+      th
 
   tbody
     - @obligors.each do |obligor|
       tr
         td = obligor.company_name
-        td = obligor.license_code
         td = obligor.deposit_bank
         td = obligor.bank_no
         td = obligor.province_id

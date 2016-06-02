@@ -1,13 +1,15 @@
+-model_class = Debt
+
 p#notice = notice
 
 p
-  strong Name:
+  strong =model_class.human_attribute_name(:name)
   = @debt.name
 p
-  strong Type:
+  strong =model_class.human_attribute_name(:debt_type)
   = @debt.debt_type
 p
-  strong domestic_offshore:
+  strong =model_class.human_attribute_name(:domestic_offshore)
   = @debt.domestic_offshore
 p
   strong Startdate:

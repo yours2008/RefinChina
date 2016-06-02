@@ -3,28 +3,24 @@ h1 Listing creditors
 table
   thead
     tr
-      th Legalname
-      th Legalsex
-      th Legalidno
-      th Legalidduedate
-      th Legallongterm
-      th Legaltel
-      th Legalphone
-      th Legalmail
-      th Custname
-      th Endlishname
-      th Businessnumber
-      th Idno
-      th Idduedate
-      th Isidlongterm
+      th Operator name
+      th Operator sex
+      th Operator idno
+      th Operator idduedate
+      th Operator longterm
+      th Operator tel
+      th Operator phone
+      th Operator mail
+      th Cust name
+      th English name
       th Nature
       th Zipcode
-      th Custphone
+      th Cust phone
       th Fax
-      th Corptype
+      th Corp type
       th Area
-      th Addr
-      th Registeredaddr
+      th Address
+      th Registered addr
       th
       th
       th
@@ -32,28 +28,24 @@ table
   tbody
     - @creditors.each do |creditor|
       tr
-        td = creditor.legalname
-        td = creditor.legalsex
-        td = creditor.legalidno
-        td = creditor.legalidduedate
-        td = creditor.legalLongTerm
-        td = creditor.legaltel
-        td = creditor.legalphone
-        td = creditor.legalmail
+        td = creditor.operator_name
+        td = creditor.operator_sex
+        td = creditor.operator_idno
+        td = creditor.operator_idduedate
+        td = creditor.operator_longterm
+        td = creditor.operator_tel
+        td = creditor.operator_phone
+        td = creditor.operator_mail
         td = creditor.cust_name
-        td = creditor.endlishName
-        td = creditor.businessNumber
-        td = creditor.idno
-        td = creditor.idduedate
-        td = creditor.isIdLongTerm
+        td = creditor.english_name
         td = creditor.nature
         td = creditor.zipcode
-        td = creditor.custPhone
+        td = creditor.cust_phone
         td = creditor.fax
-        td = creditor.corptype
+        td = creditor.corp_type
         td = creditor.area
-        td = creditor.addr
-        td = creditor.registeredAddr
+        td = creditor.address
+        td = creditor.registered_addr
         td = link_to 'Show', creditor
         td = link_to 'Edit', edit_creditor_path(creditor)
         td = link_to 'Destroy', creditor, data: {:confirm => 'Are you sure?'}, :method => :delete

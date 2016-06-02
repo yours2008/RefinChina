@@ -1,26 +1,22 @@
 FactoryGirl.define do
   factory :creditor do
-    legalname "MyString"
-    legalsex false
-    legalidno "MyString"
-    legalidduedate "MyString"
-    legalLongTerm false
-    legaltel "MyString"
-    legalphone "MyString"
-    legalmail "MyString"
+    operator_name "MyString"
+    operator_sex false
+    operator_idno "MyString"
+    operator_idduedate "MyString"
+    operator_longterm false
+    operator_tel "MyString"
+    operator_phone "MyString"
+    operator_mail "MyString"
     cust_name "MyString"
-    endlishName "MyString"
-    businessNumber "MyString"
-    idno "MyString"
-    idduedate "MyString"
-    isIdLongTerm "MyString"
+    english_name "MyString"
     nature "MyString"
     zipcode 1
-    custPhone "MyString"
+    cust_phone "MyString"
     fax "MyString"
-    corptype "MyString"
+    corp_type "MyString"
     area "MyString"
-    addr "MyString"
-    registeredAddr "MyString"
+    address "MyString"
+    registered_addr "MyString"
   end
 end

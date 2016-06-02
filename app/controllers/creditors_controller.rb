@@ -69,6 +69,6 @@ class CreditorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def creditor_params
-      params.require(:creditor).permit(:legalname, :legalsex, :legalidno, :legalidduedate, :legalLongTerm, :legaltel, :legalphone, :legalmail, :cust_name, :endlishName, :businessNumber, :idno, :idduedate, :isIdLongTerm, :nature, :zipcode, :cust_phone, :fax, :corp_type, :area, :addr, :registered_addr)
+      params.require(:creditor).permit(:operator_name, :operator_sex, :operator_idno, :operator_idduedate, :operator_longterm, :operator_tel, :operator_phone, :operator_mail, :cust_name, :english_name, :nature, :zipcode, :cust_phone, :fax, :corp_type, :area, :address, :registered_addr)
     end
 end

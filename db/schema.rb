@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160531062328) do
+ActiveRecord::Schema.define(version: 20160602124458) do
 
   create_table "business_types", force: :cascade do |t|
     t.string   "btype"
@@ -41,23 +41,23 @@ ActiveRecord::Schema.define(version: 20160531062328) do
     t.string   "operator_tel"
     t.string   "operator_phone"
     t.string   "operator_mail"
-    t.string   "custname"
-    t.string   "endlishName"
+    t.string   "cust_name"
+    t.string   "english_name"
     t.string   "nature"
     t.integer  "zipcode"
-    t.string   "custPhone"
+    t.string   "cust_phone"
     t.string   "fax"
-    t.string   "corptype"
+    t.string   "corp_type"
     t.string   "area"
-    t.string   "addr"
-    t.string   "registeredAddr"
+    t.string   "address"
+    t.string   "registered_addr"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
   end
 
   create_table "debts", force: :cascade do |t|
     t.string   "name"
-    t.string   "type"
+    t.string   "debt_type"
     t.string   "domestic_offshore"
     t.date     "start_date"
     t.date     "end_date"

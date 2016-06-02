@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  resources :creditors
+  resources :creditors
+  resources :creditors
   resources :debts
   resources :capitals
-  resources :creditors
   resources :obligors
   namespace :admin do
     resources :users

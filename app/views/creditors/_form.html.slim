@@ -3,7 +3,10 @@
 
   .form-inputs
     = f.input :operator_name
-    = f.collection_radio_buttons :operator_sex, [[true, 'male'] ,[false, 'female']], :first, :last
+    .row
+      .btn-group data-toggle="buttons"
+        = f.collection_radio_buttons :operator_sex, [[true, 'male'] ,[false, 'female']], :first, :last, { item_wrapper_tag: false } do |b|
+          =b.label(:class => 'btn btn-primary'){ b.radio_button + b.text }
     = f.input :operator_idno
     = f.input :operator_idduedate
     = f.input :operator_longterm
